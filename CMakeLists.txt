@@ -26,13 +26,10 @@
 cmake_minimum_required(VERSION 3.6)
 
 set(APP_NAME AircraftWar)
-set(LIBRARY Librarys)
 project(${APP_NAME})
 
-
-
 if(NOT DEFINED BUILD_ENGINE_DONE) # to test AircraftWar into root project
-    set(COCOS2DX_ROOT_PATH ${CMAKE_CURRENT_SOURCE_DIR}/../${LIBRARY}/cocos2d)
+    set(COCOS2DX_ROOT_PATH ${CMAKE_CURRENT_SOURCE_DIR}//cocos2d)
     set(CMAKE_MODULE_PATH ${COCOS2DX_ROOT_PATH}/cmake/Modules/)
 
     include(CocosBuildSet)
