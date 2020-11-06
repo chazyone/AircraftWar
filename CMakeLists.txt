@@ -49,10 +49,12 @@ set(GameUser
     "${CMAKE_CURRENT_SOURCE_DIR}/Classes/User"
     )
 list(APPEND GAME_SOURCE
-     ${GameUser}/LoadRes.cpp
+     ${GameUser}/LoadScene.cpp
+     ${GameUser}/WelcomeScene.cpp
      )
 list(APPEND GAME_HEADER
-     ${GameUser}/LoadRes.h
+     ${GameUser}/LoadScene.h
+     ${GameUser}/WelcomeScene.h
      )
 # add cross-platforms source files and header files 
 list(APPEND GAME_SOURCE
